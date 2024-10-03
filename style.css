@@ -1,109 +1,118 @@
-/* Este repositório base foi criado para te ajudar caso você não saiba como começar. Lembre-se de que o portfólio é a sua carta de apresentação e você deve dar a sua cara. Por isso, convidamos você a personalizá-lo de acordo com o seu estilo e preferências; não se limite apenas ao layout proposto no Figma. */
-:root {
-    --cor-de-fundo: #F5F5F5;
-    --cor-de-fundo-menu: #ffffff;
-    --cor-do-link: #000000;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 body {
-    background-color: var(--cor-de-fundo);
     font-family: 'Raleway', sans-serif;
-    margin: 0;
-    box-sizing: border-box;
-    padding: 0;
-    line-height: 1.6;
-}
-
-ol, ul, li {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: var(--cor-do-link);
-}
-
-/* ------------------------------ Seção Menu -------------------------------*/
-.cabecalho {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    background-color: var(--cor-de-fundo-menu);
-}
-
-.cabecalho__logo {
-    max-width: 80px; /* Ajuste para telas pequenas */
-}
-
-.cabecalho__titulo {
-    font-size: 1.2rem;
+    color: #333;
+    background-color: #f4f4f4;
     text-align: center;
 }
 
+.cabecalho {
+    background-color: #4b0082;
+    color: white;
+    padding: 20px 0;
+}
+
+.cabecalho__titulo {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
 .navegacao__lista {
-    display: none;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 .navegacao__elemento a {
-    font-size: 0.9rem;
-}
-/* ------------------------------ Seção Apresentação ------------------------------*/
-
-
-/* ------------------------------ Seção Sobre mim ----------------------------------*/
-
-
-/*------------------------------ Seção de Habilidades ------------------------------*/
-
-
-/*------------------------------ Seção de Hobbies --------------------------------*/
-
-
-/*------------------------------ Seção de Projetos --------------------------------*/
-
-
-/*------------------------------ Seção de Contato ---------------------------------*/
-
-
-/* ------------------------------ Responsividade ---------------------------------------*/
-
-/* Tablets e telas maiores */
-@media (min-width: 768px) {
-    .cabecalho {
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    .cabecalho__logo {
-        max-width: 100px;
-    }
-
-    .cabecalho__titulo {
-        font-size: 1.5rem;
-    }
-
-    .navegacao__lista {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
-    }
-
-    .navegacao__elemento a {
-        font-size: 1rem;
-    }
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
 
-/* Telas grandes */
-@media (min-width: 1024px) {
-    /* Aqui você pode ajustar ainda mais o design para telas grandes */
-    .cabecalho__titulo {
-        font-size: 1.8rem;
-    }
+.apresentacao__foto {
+    border-radius: 50%;
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
 
-    .navegacao__elemento a {
-        font-size: 1.1rem;
-    }
+.apresentacao__titulo {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.apresentacao__subtitulo {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.redes {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.redes__elemento a {
+    text-decoration: none;
+    color: #4b0082;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+.sobre-mim__texto,
+.habilidades__lista,
+.hobbies__lista,
+.formacao__lista,
+.projetos__descricao,
+.contato__texto {
+    margin: 20px 0;
+    font-size: 18px;
+    color: #555;
+}
+
+.habilidades__lista,
+.hobbies__lista,
+.formacao__lista,
+.contato__redes {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.habilidades__elemento,
+.hobbies__elemento,
+.formacao__elemento,
+.contato__elemento {
+    margin: 10px 0;
+}
+
+.rodape {
+    background-color: #4b0082;
+    color: white;
+    padding: 15px 0;
+}
+
+.rodape__texto {
+    font-size: 14px;
 }
